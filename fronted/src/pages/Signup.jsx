@@ -26,7 +26,7 @@ function Signup() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://mern-portfolio-lvmy.onrender.com/users/signup",
+        "http://31.97.152.30:5000/users/signup",
         { email, password },
         { withCredentials: true }
       );
