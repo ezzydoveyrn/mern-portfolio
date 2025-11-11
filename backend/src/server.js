@@ -11,9 +11,10 @@ const PORT = process.env.PORT;
 
 
 //middleware
-app.use(
-  cors()
-);
+app.use(cors({
+  origin: "https://www.ezzydoveyrn.online", // frontend URL from .env 
+  credentials: true,               // allow cookies/auth headers
+}));
 app.use(express.json());
 app.get("/", (req, res)=>{
   res.status(200).json({message:"welcome to the backend"});
