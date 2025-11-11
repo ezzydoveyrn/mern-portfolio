@@ -15,6 +15,9 @@ app.use(
   cors()
 );
 app.use(express.json());
+app.get("/", (req, res)=>{
+  res.status(200).json({message:"welcome to the backend"});
+})
 app.use("/users", router)
 
 
