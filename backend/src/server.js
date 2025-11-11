@@ -12,10 +12,7 @@ const PORT = process.env.PORT;
 
 //middleware
 app.use(
-  cors({
-    origin: "https://mern-portfolio-1-kzzg.onrender.com/", // your frontend URL
-    credentials: true, // allow cookies / tokens
-  })
+  cors()
 );
 app.use(express.json());
 app.use("/users", router)
