@@ -33,7 +33,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://31.97.152.30:5000/users/signin",
+        "https://api.ezzydoveyrn.online/users/signin",
         { email, password },
         { withCredentials: true } // helps handle cookies/tokens if backend sends them
       );
