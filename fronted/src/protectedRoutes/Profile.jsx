@@ -20,7 +20,7 @@ function Profile() {
 
     async function fetchUser() {
       try {
-        const res = await axios.get(`http://localhost:5000/users/${userId}`);
+        const res = await axios.get(`https://mern-portfolio-lvmy.onrender.com/users/${userId}`);
         setEmail(res.data.email);
         toast.success("User fetched successfully");
       } catch (error) {
