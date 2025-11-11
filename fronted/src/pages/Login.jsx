@@ -35,7 +35,6 @@ const Login = () => {
       const response = await axios.post(
         "https://api.ezzydoveyrn.online/users/signin",
         { email, password },
-        { withCredentials: true } // helps handle cookies/tokens if backend sends them
       );
 
       toast.success("Login successful!");
